@@ -11,6 +11,9 @@ export class TutorialsComponent implements OnInit {
 	public title = "Hello Vijay";
 	public imgPath = "http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg";
 
+	onClick(value){
+		alert(value);
+	}
   //constructor() { }
 
   ngOnInit() {

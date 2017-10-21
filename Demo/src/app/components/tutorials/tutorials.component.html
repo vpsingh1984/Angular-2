@@ -1,5 +1,5 @@
 <p>
   {{title}}
 </p>
-<img [src]="imgPath">
-
+<input type="text" #inputValue><br>
+<button type="button" (click)="onClick(inputValue.value)">Find Value</button>
