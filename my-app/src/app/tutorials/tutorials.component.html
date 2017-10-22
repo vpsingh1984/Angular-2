@@ -1,0 +1,21 @@
+<p>
+ 	{{title}}
+</p>
+<div>
+	<input type="text" [(ngModel)]="fname">
+	<input type="text" [(ngModel)]="lname">
+	<h2>Full Name: {{fname}} {{lname}}</h2>
+</div>
+<div>
+	<p *ngIf="showElement">Show Element</p>
+</div>
+
+<div [ngSwitch]="color">
+	<p *ngSwitchCase="'red'">THis is red color</p>
+	<p *ngSwitchCase="'green'">THis is green color</p>
+	<p *ngSwitchCase="'blue'">THis is blue color</p>
+</div>
+
+<ul>
+	<li *ngFor="let color of colors">{{color}}</li>
+</ul>
