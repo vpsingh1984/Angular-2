@@ -7,6 +7,7 @@ import { TutorialsComponent } from './tutorials/tutorials.component';
 import { AttrdirectiveComponent } from './attrdirective/attrdirective.component';
 import { InputoutputComponent } from './inputoutput/inputoutput.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     TutorialsComponent,
     AttrdirectiveComponent,
     InputoutputComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
