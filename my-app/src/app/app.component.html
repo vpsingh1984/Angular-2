@@ -6,10 +6,11 @@
   <div>
   	Parent data: <input type="text" #ptext (keyup)="0">
   </div>
-  <p>THIS IS DATA FROM CHILD: {{childData}}</p>
+  <!-- <p>THIS IS DATA FROM CHILD: {{childData}}</p> -->
+  <p>THIS IS DATA FROM CHILD: {{child.data}}</p>
   <!-- <app-tutorials></app-tutorials>
   <app-attrdirective></app-attrdirective> -->
-  <app-inputoutput (childEvent)="childData=$event" [parentData]="ptext.value"></app-inputoutput>
-  <app-employee-details></app-employee-details>
+  <app-inputoutput #child (childEvent)="chiledButton($event)" [parentData]="ptext.value"></app-inputoutput>
+  <app-employee-list></app-employee-list>
 </div>
 

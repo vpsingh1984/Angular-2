@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { EmplyeeService } from '././services/employee.service';
 
 @Component({
@@ -7,10 +7,17 @@ import { EmplyeeService } from '././services/employee.service';
   styleUrls: ['./app.component.css'],
   providers: [EmplyeeService]
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Parent Component';
-
+  
   public childData: string;
 
+  ngOnInit():void{
+  		//console.log("Ahsan",child);
+  }
+
+  chiledButton(e){
+  	console.log("Ahsan",e);
+  }
 
 }

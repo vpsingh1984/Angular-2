@@ -4,6 +4,7 @@
 <h2>{{parentData}}</h2>
 <input type="text" #childText (keyup)="onChange(childText.value)">
 <h2>{{8.99 | currency: 'inr': true}}</h2>
+<button (click)="sendData()">Send Data to parent</button>
 <!-- <h3>{{date}}</h3>
 <h3>{{date | date: 'fullDate'}}</h3>
 <h3>{{date | date: 'shortDate'}}</h3>
