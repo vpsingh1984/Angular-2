@@ -9,11 +9,11 @@ export class EmplyeeService{
 
 
 	private _url: string = "apidata/data.json";
-	//private _url: string = "https://swapi.co/api/people/1/";
+	// private _url: string = "https://swapi.co/api/people/1/";
 	constructor(private _http: Http){}
 
 	getEmplyee(){
-		return this._http.get('https://swapi.co/api/planets/')
+		return this._http.get(_url)
 			.map((response:Response) => response.json());
 	}
 
